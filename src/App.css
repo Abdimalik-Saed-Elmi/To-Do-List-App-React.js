@@ -1,0 +1,152 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  box-sizing: border-box;
+}
+
+::before,
+
+::after{
+  box-sizing: inherit;
+}
+
+body{
+  line-height: 1.5;
+  background: #e1e1e1;
+  font-family: "Roboto", sans-serif;
+}
+
+main{
+  width: 100%;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70vh;
+  margin-bottom: 1px;
+}
+
+footer{
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0px;
+  border-top: 2px solid #212020;
+  font-size: 1.2rem;
+  color: #5a5a8d;
+  text-align: center;
+
+}
+header{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:black;
+  padding: 20px 0;
+  border-bottom: 2px solid #212020;
+  margin-top: 15px;
+}
+
+.Add-top{
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  height: 65px;
+  margin-top: 24px;
+
+}
+
+.Add-top input{
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  line-height: 1.5;
+  padding-top: 0.90rem;
+  padding-left: 2.2rem;
+  font-size: 1.5rem;
+  border: none;
+  background: transparent;
+}
+
+button{
+  all: unset;
+  position: relative;
+  font-size: 30px;
+  color: #7575a1;
+  bottom: 2.4rem;
+  float: right;
+  right: 1.5rem;
+}
+
+input:focus{
+  outline: none;
+}
+textarea:focus{
+  outline: none;
+}
+
+
+.task-card{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.task-card .task-header{
+  background: #f2f2f2;
+  margin-top: 24px;
+  border-radius: 5px;
+}
+
+.task-card .task-title{
+  padding-left: 34px;
+  padding-right: 20px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.task-header .task-header input{
+  border: none;
+  padding: 6px 0;
+  background: inherit;
+  color: black;
+  border-radius: 5px;
+  font-size: 24px;
+  
+}
+
+
+.task-card .task-icon{
+  width: 24px;
+  color: #4a90e2;
+  margin-right: 32px;
+} 
+
+.task-card .all-tasks{
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-card .all-tasks .task-msg{
+  margin-top: 8px;
+  font-size: 24px;
+  color: #7575a1;
+  font-style: italic;
+  display: flex;
+}
+
+.task-card .task-done{
+    background: #bdb8ee;
+    border-radius: 5px;
+   
+    margin-top: 24px;
+}
